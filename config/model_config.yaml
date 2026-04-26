@@ -1,0 +1,38 @@
+data:
+  num_users: 5000
+  days_per_user: 365
+  train_split: 0.70
+  val_split: 0.15
+  test_split: 0.15
+  random_seed: 42
+
+features:
+  input_dim: 128
+  window_days: 30
+  normalisation: minmax
+
+model:
+  hidden_dims: [128, 64, 32]
+  dropout_rates: [0.2, 0.1]
+  l2_regularisation: 0.0001
+  num_insight_classes: 40
+
+training:
+  epochs: 25
+  batch_size: 512
+  learning_rate: 0.0005
+  early_stopping_patience: 5
+  reduce_lr_patience: 3
+  reduce_lr_factor: 0.5
+  min_lr: 0.00001
+  use_focal_loss: false
+
+thresholds:
+  insight_confidence: 0.65
+  budget_risk: 0.60
+  mood_prediction_display: true
+
+tflite:
+  quantisation: int8
+  target_model_size_mb: 5
+  target_inference_ms: 100

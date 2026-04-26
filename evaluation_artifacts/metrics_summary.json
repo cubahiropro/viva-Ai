@@ -1,0 +1,429 @@
+{
+  "test_metrics": {
+    "budget_risk_auc": 0.999136209487915,
+    "budget_risk_loss": 0.050406280905008316,
+    "insights_auc": 0.7504017353057861,
+    "insights_loss": 0.24148932099342346,
+    "insights_precision": 0.7499209046363831,
+    "insights_recall": 0.5333676338195801,
+    "loss": 0.2714933753013611,
+    "mood_prediction_loss": 0.00045881353435106575,
+    "mood_prediction_mae": 0.015693416818976402
+  },
+  "macro_metrics": {
+    "macro_precision": 0.33740155459420845,
+    "macro_recall": 0.2374137261584272,
+    "macro_f1": 0.2456323381986932,
+    "macro_roc_auc": 0.7792661041154206,
+    "macro_ap": 0.3578251927849919
+  },
+  "micro_metrics": {
+    "micro_precision": 0.7499209051666353,
+    "micro_recall": 0.5333676582761251,
+    "micro_f1": 0.6233727447986895,
+    "micro_roc_auc": 0.9211192804935242,
+    "micro_f1_optimal": 0.2456323381986932
+  },
+  "per_class": {
+    "FIN_OVERSPEND_RISK": {
+      "support_positive": 6789.0,
+      "support_total": 40320.0,
+      "precision": 0.9968595041322315,
+      "recall": 0.8883487995286493,
+      "f1": 0.9394812680115274,
+      "brier": 0.01335997972637415,
+      "roc_auc": 0.9993935212971876,
+      "ap": 0.9970945996665577
+    },
+    "FIN_UNUSUAL_EXPENSE": {
+      "support_positive": 1143.0,
+      "support_total": 40320.0,
+      "precision": 0.29987659399424105,
+      "recall": 0.6377952755905512,
+      "f1": 0.40794627867935085,
+      "brier": 0.039520129561424255,
+      "roc_auc": 0.9315022064542261,
+      "ap": 0.3883584347508192
+    },
+    "FIN_SAVINGS_POSITIVE": {
+      "support_positive": 26325.0,
+      "support_total": 40320.0,
+      "precision": 0.7607781716264117,
+      "recall": 0.7011585944919279,
+      "f1": 0.7297527032636844,
+      "brier": 0.20676548779010773,
+      "roc_auc": 0.7064092215813069,
+      "ap": 0.800000677828806
+    },
+    "FIN_CATEGORY_SPIKE": {
+      "support_positive": 24149.0,
+      "support_total": 40320.0,
+      "precision": 0.8043255432554326,
+      "recall": 0.6498819826907947,
+      "f1": 0.7189024529900827,
+      "brier": 0.19703128933906555,
+      "roc_auc": 0.7820673636722281,
+      "ap": 0.8477189450002466
+    },
+    "FIN_INCOME_IRREGULAR": {
+      "support_positive": 2127.0,
+      "support_total": 40320.0,
+      "precision": 0.21562905317769132,
+      "recall": 0.3126469205453691,
+      "f1": 0.25522932258683556,
+      "brier": 0.07040058076381683,
+      "roc_auc": 0.8333933186766233,
+      "ap": 0.1908208080698086
+    },
+    "FIN_BUDGET_ON_TRACK": {
+      "support_positive": 24789.0,
+      "support_total": 40320.0,
+      "precision": 0.9383842644070396,
+      "recall": 0.9872927508168946,
+      "f1": 0.9622174169451543,
+      "brier": 0.03252597525715828,
+      "roc_auc": 0.9945812738711166,
+      "ap": 0.9966313075591183
+    },
+    "HLT_WATER_LOW": {
+      "support_positive": 2144.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.04646289348602295,
+      "roc_auc": 0.834388855944893,
+      "ap": 0.17027955903731018
+    },
+    "HLT_WEIGHT_TREND_UP": {
+      "support_positive": 2195.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.05043822154402733,
+      "roc_auc": 0.6846990193808581,
+      "ap": 0.09885888963645506
+    },
+    "HLT_WEIGHT_TREND_DOWN": {
+      "support_positive": 3378.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.07494848221540451,
+      "roc_auc": 0.6658616266889685,
+      "ap": 0.14991685669688576
+    },
+    "HLT_ACTIVITY_DROP": {
+      "support_positive": 809.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.01944396086037159,
+      "roc_auc": 0.7623951102600114,
+      "ap": 0.04765063397130601
+    },
+    "SLP_DEBT_ACCUMULATING": {
+      "support_positive": 8012.0,
+      "support_total": 40320.0,
+      "precision": 0.7002518891687658,
+      "recall": 0.6592611083374937,
+      "f1": 0.6791385406621665,
+      "brier": 0.08466210961341858,
+      "roc_auc": 0.9293927786356863,
+      "ap": 0.7657510129120649
+    },
+    "SLP_QUALITY_LOW": {
+      "support_positive": 1020.0,
+      "support_total": 40320.0,
+      "precision": 0.3333333333333333,
+      "recall": 0.000980392156862745,
+      "f1": 0.0019550342130987292,
+      "brier": 0.022292470559477806,
+      "roc_auc": 0.9021032779524025,
+      "ap": 0.18026484847101534
+    },
+    "SLP_CONSISTENCY_GOOD": {
+      "support_positive": 14952.0,
+      "support_total": 40320.0,
+      "precision": 0.6784533648170011,
+      "recall": 0.7686597110754414,
+      "f1": 0.7207450144236799,
+      "brier": 0.14675623178482056,
+      "roc_auc": 0.8561014517453432,
+      "ap": 0.6949232819746385
+    },
+    "SLP_LATE_NIGHT_PATTERN": {
+      "support_positive": 7767.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.15326857566833496,
+      "roc_auc": 0.589735847515166,
+      "ap": 0.24589926883456392
+    },
+    "SLP_MOOD_CORRELATION": {
+      "support_positive": 16737.0,
+      "support_total": 40320.0,
+      "precision": 0.5948923385077617,
+      "recall": 0.4258827746908048,
+      "f1": 0.4963961140708242,
+      "brier": 0.22045113146305084,
+      "roc_auc": 0.6824305260828688,
+      "ap": 0.586426093141077
+    },
+    "MOD_LOW_STREAK": {
+      "support_positive": 304.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.006425824947655201,
+      "roc_auc": 0.9836541534701908,
+      "ap": 0.20083123213529722
+    },
+    "MOD_POSITIVE_STREAK": {
+      "support_positive": 8311.0,
+      "support_total": 40320.0,
+      "precision": 0.7993321844032745,
+      "recall": 0.8929130068583805,
+      "f1": 0.8435350951974993,
+      "brier": 0.048794884234666824,
+      "roc_auc": 0.9788652232739904,
+      "ap": 0.9190495841149288
+    },
+    "MOD_SLEEP_LINK": {
+      "support_positive": 1839.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.04202840477228165,
+      "roc_auc": 0.7124323792541616,
+      "ap": 0.11978429350067321
+    },
+    "MOD_FINANCE_STRESS": {
+      "support_positive": 1977.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.04591107740998268,
+      "roc_auc": 0.6595900715727674,
+      "ap": 0.08869518096850547
+    },
+    "MOD_WEEKEND_PATTERN": {
+      "support_positive": 987.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.023839065805077553,
+      "roc_auc": 0.6224425914072582,
+      "ap": 0.036284442082444385
+    },
+    "TSK_OVERDUE_PILE": {
+      "support_positive": 12390.0,
+      "support_total": 40320.0,
+      "precision": 0.6304909560723514,
+      "recall": 0.09846650524616626,
+      "f1": 0.17033158813263524,
+      "brier": 0.193508580327034,
+      "roc_auc": 0.6918025361455062,
+      "ap": 0.48646642770486065
+    },
+    "TSK_COMPLETION_HIGH": {
+      "support_positive": 4428.0,
+      "support_total": 40320.0,
+      "precision": 1.0,
+      "recall": 0.00022583559168925022,
+      "f1": 0.0004515692029803567,
+      "brier": 0.08803542703390121,
+      "roc_auc": 0.7803706116089915,
+      "ap": 0.2943268836735362
+    },
+    "HBT_STREAK_AT_RISK": {
+      "support_positive": 291.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.007261214312165976,
+      "roc_auc": 0.7779991808344447,
+      "ap": 0.01796609987522422
+    },
+    "HBT_BEST_STREAK_EVER": {
+      "support_positive": 233.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.0057092392817139626,
+      "roc_auc": 0.8568107927489469,
+      "ap": 0.025942795422166796
+    },
+    "HBT_MORNING_PATTERN": {
+      "support_positive": 19548.0,
+      "support_total": 40320.0,
+      "precision": 0.5389152083534757,
+      "recall": 0.5702885205647636,
+      "f1": 0.5541581746781329,
+      "brier": 0.24526315927505493,
+      "roc_auc": 0.5818863724368691,
+      "ap": 0.5638939780913719
+    },
+    "MED_MISSED_DOSES": {
+      "support_positive": 7747.0,
+      "support_total": 40320.0,
+      "precision": 0.883030303030303,
+      "recall": 0.18807280237511295,
+      "f1": 0.3100989677556667,
+      "brier": 0.11453300714492798,
+      "roc_auc": 0.8385999056974154,
+      "ap": 0.6349083539519301
+    },
+    "MED_COMPLIANCE_GOOD": {
+      "support_positive": 8815.0,
+      "support_total": 40320.0,
+      "precision": 0.6549279670706609,
+      "recall": 0.32490073737946684,
+      "f1": 0.4343342432514407,
+      "brier": 0.12194737046957016,
+      "roc_auc": 0.859319622892512,
+      "ap": 0.5886193594822616
+    },
+    "MED_TIMING_IRREGULAR": {
+      "support_positive": 3793.0,
+      "support_total": 40320.0,
+      "precision": 0.696763202725724,
+      "recall": 0.21566042710255734,
+      "f1": 0.32937386752566944,
+      "brier": 0.05754345655441284,
+      "roc_auc": 0.9272137074207305,
+      "ap": 0.557496740687636
+    },
+    "GOL_ON_TRACK": {
+      "support_positive": 6927.0,
+      "support_total": 40320.0,
+      "precision": 0.5610421084519842,
+      "recall": 0.2673596073336221,
+      "f1": 0.36214313648807195,
+      "brier": 0.10586436092853546,
+      "roc_auc": 0.8635101980793488,
+      "ap": 0.4973830581365957
+    },
+    "GOL_BEHIND_PACE": {
+      "support_positive": 3218.0,
+      "support_total": 40320.0,
+      "precision": 0.5254237288135594,
+      "recall": 0.009633312616532008,
+      "f1": 0.018919743667989014,
+      "brier": 0.060584478080272675,
+      "roc_auc": 0.8888309021886116,
+      "ap": 0.34952740267182275
+    },
+    "GOL_MILESTONE_NEAR": {
+      "support_positive": 166.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.004098843317478895,
+      "roc_auc": 0.8154726291728652,
+      "ap": 0.014503526495312963
+    },
+    "GOL_COMPLETED": {
+      "support_positive": 24.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.0005949706537649035,
+      "roc_auc": 0.8240530491033022,
+      "ap": 0.0022615933171613927
+    },
+    "CRS_SLEEP_HABIT_LINK": {
+      "support_positive": 3086.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.07095367461442947,
+      "roc_auc": 0.5015976145468896,
+      "ap": 0.07751684614662496
+    },
+    "CRS_EXERCISE_MOOD_LINK": {
+      "support_positive": 2087.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.04923149570822716,
+      "roc_auc": 0.5256506360121019,
+      "ap": 0.05766441690544262
+    },
+    "CRS_SPENDING_MOOD_LINK": {
+      "support_positive": 1977.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.046006184071302414,
+      "roc_auc": 0.6550042582782878,
+      "ap": 0.08572300205653993
+    },
+    "CRS_HYDRATION_ENERGY": {
+      "support_positive": 3123.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.07144499570131302,
+      "roc_auc": 0.5606690984060592,
+      "ap": 0.09616006923818049
+    },
+    "CRS_WEEKEND_PATTERN": {
+      "support_positive": 2290.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.05350527539849281,
+      "roc_auc": 0.5782543429859441,
+      "ap": 0.07128623606170902
+    },
+    "GEN_DATA_SUFFICIENT": {
+      "support_positive": 25729.0,
+      "support_total": 40320.0,
+      "precision": 0.8833524684270952,
+      "recall": 0.8971199813440087,
+      "f1": 0.890182996201238,
+      "brier": 0.10641463845968246,
+      "roc_auc": 0.9218991399469423,
+      "ap": 0.9568599736518113
+    },
+    "GEN_DATA_THIN": {
+      "support_positive": 574.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.013754891231656075,
+      "roc_auc": 0.8309936432583842,
+      "ap": 0.05143580469197277
+    },
+    "GEN_NEW_USER": {
+      "support_positive": 0.0,
+      "support_total": 40320.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": NaN,
+      "roc_auc": NaN,
+      "ap": NaN
+    }
+  }
+}

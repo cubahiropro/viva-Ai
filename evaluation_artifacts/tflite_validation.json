@@ -1,0 +1,17 @@
+{
+  "size_bytes": 33792,
+  "size_kb": 33.0,
+  "size_ok": true,
+  "p95_ms": 0.013453049632516922,
+  "perf_ok": true,
+  "parity_mean_abs_diff": 0.008905154652893543,
+  "parity_max_abs_diff": 0.26333117485046387,
+  "parity_ok": true,
+  "all_pass": true,
+  "assertions": {
+    "max_size_bytes": 5242880,
+    "max_inference_ms": 100.0,
+    "max_parity_mean_diff": 0.05,
+    "max_parity_max_diff": 0.35
+  }
+}

@@ -1,0 +1,40 @@
+Viva AI — Proprietary License
+=========================================================================
+
+Copyright (c) 2026 Evo Inc.  All rights reserved.
+
+This software, including its source code, configuration, model
+artefacts, evaluation artefacts, documentation, and all associated
+files (the "Software"), is the confidential and proprietary property
+of Evo Inc. and was developed by Bebetos.
+
+Permission is granted to view this repository for evaluation and
+educational purposes only. The following are NOT permitted without
+prior written consent from Evo Inc.:
+
+  1. Copying, modification, merging, or distribution of the Software,
+     in whole or in part, in source or binary form (including the
+     trained TFLite model and its weights).
+  2. Use of the Software, the trained model, or any portion of it,
+     in any product or service, commercial or otherwise.
+  3. Removal or alteration of any copyright, trademark, license, or
+     other proprietary notices contained in the Software.
+  4. Reverse engineering or extracting the model weights to reuse
+     outside the Viva application.
+  5. Use of the "Viva", "Bebetos", or "Evo Inc." names, logos, or
+     trademarks without explicit prior written authorization.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+The model is intended only as part of the Viva application. The
+insights it produces are observations, not medical advice. Evo Inc.
+makes no claim of medical or clinical accuracy.
+
+For licensing inquiries or commercial use, contact Evo Inc. via
+WhatsApp at +257 76 197 888.

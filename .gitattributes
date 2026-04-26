@@ -1,0 +1,33 @@
+# Force LF endings for source files so the repo behaves the same on
+# Linux / macOS / Windows.
+*               text=auto eol=lf
+
+*.py            text eol=lf
+*.yaml          text eol=lf
+*.yml           text eol=lf
+*.json          text eol=lf
+*.md            text eol=lf
+*.txt           text eol=lf
+*.cfg           text eol=lf
+*.ini           text eol=lf
+*.dart          text eol=lf
+*.sh            text eol=lf
+.gitignore      text eol=lf
+.gitattributes  text eol=lf
+
+# Treat binary artefacts as binary — never try to diff or normalise them.
+*.tflite        binary
+*.h5            binary
+*.keras         binary
+*.ckpt          binary
+*.npz           binary
+*.npy           binary
+*.parquet       binary
+*.pdf           binary
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.gif           binary
+*.zip           binary
+*.gz            binary
+*.tar           binary
