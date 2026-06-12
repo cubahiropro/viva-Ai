@@ -56,9 +56,13 @@ python scripts/train.py --config config/model_config.yaml
 python scripts/evaluate.py --model models/checkpoints/best.keras
 
 # 5. Convert + INT8-quantise to TFLite (writes models/final/viva_ai.tflite)
-python scripts/convert_tflite.py
+python scripts/convert_tflite.py --mode int8
 
-# 6. Export the parity fixture used by the Flutter app's Dart tests
+# 6. Copy model + refresh ML policy in the Flutter app
+bash scripts/sync_to_flutter_app.sh
+# (Flutter app path defaults to ../../Flutter/viva-app — override with VIVA_FLUTTER_APP)
+
+# 7. Export the parity fixture used by the Flutter app's Dart tests
 python scripts/export_parity_fixture.py
 ```
 
@@ -84,13 +88,24 @@ viva_ai/
 
 ## Output artefacts
 
-After running the pipeline, two files are copied into the Viva mobile
-app at `viva mobile/assets/ai/`:
+After running the pipeline, sync into the Viva Flutter app:
+
+```bash
+bash scripts/sync_to_flutter_app.sh
+```
+
+This copies:
 
 ```text
-models/final/viva_ai.tflite           # the on-device model
-models/final/feature_metadata.json    # feature names + normalisation stats
+models/final/viva_ai.tflite           → viva-app/assets/ai/
+models/final/feature_metadata.json    → viva-app/assets/ai/
+lib/features/ai/engine/ml_insight_policy.dart  # thresholds from per_class.json
 ```
+
+**Note:** The Flutter app lives at `../../Flutter/viva-app` relative to this repo
+(not `../viva-app`). Set `VIVA_FLUTTER_APP` if yours is elsewhere.
+
+If `python` fails with `ModuleNotFoundError`, run `bash scripts/setup_env.sh` first.
 
 `flutter_integration/feature_extractor.dart` and
 `flutter_integration/parity_fixture.json` are also dropped into the

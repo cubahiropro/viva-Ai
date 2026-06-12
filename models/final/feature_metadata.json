@@ -393,5 +393,7 @@
     "insights": 1,
     "budget_risk": 0,
     "mood_prediction": 2
-  }
+  },
+  "model_version": 1,
+  "model_name": "viva_insight_net_v1"
 }
